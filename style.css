@@ -1,0 +1,101 @@
+body{
+	margin:0;
+	color:#6a6f8c;
+	background:white;
+	font:tahoma, Helvetica, fantasy;
+	background-color:white;	
+	margin: auto;
+	width: 100%;
+	border: 1px solid blue;
+	padding: 0px;
+
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.banner{
+	border: 1px solid blue;
+	background-color:#ffff80;
+}
+.banner .banner-text-align{
+	display:inline-block;
+}
+.banner .banner-text-align .bnrtxt{
+	font-family:Arial, Helvetica, fantasy;
+}
+
+#banner-text{
+	font-size:100%;
+	color:red;
+}
+#banner-text1{
+	font-size:70%;
+	color:blue;
+}
+.banner img{
+	width:10%;
+	height:auto;
+	margin:5px 5px 5px 5px;
+	position:relative;
+	display:inline-block;
+}
+
+.form-persion{
+	display:block;
+	visibility: hidden;
+}
+.persionInfo{
+	color: #000f42;
+	display:inline-block;
+}
+.main-form{
+	width:100%;
+	height:100%;
+	position:relative;
+	padding:10px 30px 50px 30px;
+	background:white;
+}
+.input{
+  position: relative;
+  margin: 5px;
+  padding: 5px 5px;
+  height: auto;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  border-radius: 2px;
+  border: 2px solid #e7e9eb; /* Green */
+}
+.button{
+	float:left;
+	position: relative;
+	margin: 2px;
+	padding: 5px 5px;
+	height: auto;
+	width: auto;
+	background-color: #00ff00;
+	color: black;
+	border: 2px solid #e7e9eb; /* Green */
+	border-radius: 10px;
+	transition-duration: 0.4s;
+}
+.button:hover{
+        background-color:  #009900;
+    };
+
+.main-form .group .label{
+	color:black;
+	font-size:14px;
+}
+.title-qrcode{
+	text-align:center;
+	color:black;
+	font-size:18px;
+}
+.foot-lnk{
+	text-align:center;
+	float: bottom;
+	display: block;
+}

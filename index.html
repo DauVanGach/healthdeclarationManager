@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+  <head>
+    <title>172 - AntiCOVID Health Declaration Manager</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<meta name="theme-color" content="#317EFB"/>
+	<link rel="apple-touch-icon" href="images/favicon.png">
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/html5-qrcode.min.js"></script>
+	<script type="text/javascript" src="scripts/idb.js"></script>
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
+  </head>
+  <body>
+	<div class="banner" id="banner-page">
+		<img id="favicon" src="images/favicon.png" alt="172 - AntiCOVID">
+		<div class="banner-text-align">
+			<div class="bnrtxt" id="banner-text">172 - AntiCOVID Health Declaration</div>
+			<div class="bnrtxt" id="banner-text1">Lữ đoàn 172 chung tay đẩy lùi đại dịch COVID-19 </div>
+		</div>
+	</div>
+	<div class="menu" id="menu">
+		<div id="quyTac5K" class="quyTac5K" name="quyTac5K">
+		</div>
+	</div>
+	<div class="qrReader" id="qrReader" width = "500px" height = "500px"></div>
+	
+	<div id="form-persion" name="form-persion" class="form-persion" onclick="qrStartScan()">
+		Họ và tên: 
+		<div id="persionName" name="persionName" class="persionInfo"><br></div>
+		Năm sinh: 
+		<div id="birthday" name="birthday" class="persionInfo"><br></div>
+		Giới tính:
+		<div id="gender" name="gender" class="persionInfo"><br></div>
+		Đơn vị:
+		<div id="unit" name="unit" class="persionInfo"><br></div>
+		Số điện thoại:
+		<div id="phoneNum" name="phoneNum" class="persionInfo"><br></div>
+		Số CMND, CCCD, CMQĐ:
+		<div id="idNum" name="idNum" class="persionInfo"><br></div>
+		Địa chỉ cư trú:
+		<div id="address" name="address" class="persionInfo"><br></div>
+		Tình trạng tiêm Vacxin:
+		<div id="vacxInj" name="vacxinInj" class="persionInfo"><br></div>
+		Có biểu hiện bệnh lý?:
+		<div id="symptoms" name="symptoms" class="persionInfo"><br></div>
+		<div id="contactInfo">
+		<fieldset>
+			<legend>Khu vực tiếp xúc: </legend>
+			Từ: <div id="timeContact11" class="persionInfo"></div> giờ, ngày: <div id="dateContact11" class="persionInfo"><br></div>
+			Đến: <div id="timeContact21" class="persionInfo"></div> giờ, ngày: <div id="dateContact21" class="persionInfo"><br></div>
+			Tại: <div id="placeContact1" class="persionInfo"></div>
+		</fieldset>
+		</div>
+	</div>
+	<div>
+		<!-- <button id="scanBtn" class="button" type="button" onclick="qrStartScan()">Scan</button> -->
+	</div>
+
+	<div id="viewTable" name="viewTable" class="viewTable">
+
+	</div>
+	
+	<div id="foot-lnk" class="foot-lnk" name="foot-lnk"> Designed by Nguyễn Biên Bản</div>
+
+	<script type="text/javascript" src="scripts/app.js"></script>
+	
+  </body>
+</html>
