@@ -20,7 +20,7 @@ const qrReaderConfig = { fps: 50, qrbox: 250 };
 Html5Qrcode.getCameras().then(devices => {
 	if (devices && devices.length) {
 	  cameraId = devices[1].id;
-	  console.log(cameraId);
+	  alert(cameraId);
 	  return cameraId;
 	}
   }).then(() => qrStartScan()).catch(err => { console.log(err)
