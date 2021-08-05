@@ -15,7 +15,7 @@ var x = 1,	// So lan khai bao thoi gian dia diem
 
 const qrReader = new Html5Qrcode("qrReader",false);
 var cameraId;
-const qrReaderConfig = { fps: 50, qrbox: 250 };
+const qrReaderConfig = { fps: 50, qrbox: 300 };
 
 Html5Qrcode.getCameras().then(devices => {
 	if (devices && devices.length) {
